@@ -2,13 +2,16 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Header from '@/components/navbar'; 
 
 export default function HomeRedirect() {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/home'); // Redirect otomatis ke /home
+    router.push('/home');
   }, [router]);
 
-  return null; // Tidak menampilkan konten apa pun
+  return null;
 }
+
+<navbar/>

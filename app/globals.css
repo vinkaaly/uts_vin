@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Agar tampilan responsif di mobile */
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Tambahkan jarak antara tombol Theme Toggle */
+.fixed.bottom-4.left-4 {
+  bottom: 1rem;
+  left: 1rem;
+}
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 8s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
