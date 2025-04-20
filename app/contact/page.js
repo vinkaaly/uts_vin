@@ -27,7 +27,7 @@ export default function Contact() {
       .then((res) => res.json())
       .then(setComments);
 
-    fetch("/api/rating")
+    fetch("/api/ratings")
       .then((res) => res.json())
       .then(setRatingData);
   }, []);
@@ -45,7 +45,7 @@ export default function Contact() {
 
   const handleRate = async (value) => {
     setUserRating(value);
-    const res = await fetch("/api/rating", {
+    const res = await fetch("/api/ratings", {
       method: "POST",
       body: JSON.stringify({ value }),
     });

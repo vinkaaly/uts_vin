@@ -11,7 +11,7 @@ export default function HomeRedirect() {
     router.push('/home');
   }, [router]);
 
-  return null;
+  return null; // tidak perlu komponen navbar di sini
 }
 
 <navbar/>
